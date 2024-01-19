@@ -1,0 +1,15 @@
+<div class="detail-row">
+    <div class="id">{{student.id}}</div>
+    <div class="fName">{{student.firstName}}</div>
+    <div class="lName">{{student.lastName}}</div>
+    <div class="contact">{{student.contact}}</div>
+    <div class="address">{{student.address}}</div>
+    <div class="dept">{{student.department}}</div>
+    <div class="action"><button (click)="onClick()" class="btn">Action</button></div>
+    
+</div>
+<div *ngIf="action" class="action-btn">
+    <div class="bt1"><button class="btn">Update</button></div>
+    <div class="bt2"><button class="btn">Partial update</button></div>
+    <div class="bt3"><button style="background-color: rgb(151, 9, 9);" class="btn ">Delete</button></div>
+</div>
